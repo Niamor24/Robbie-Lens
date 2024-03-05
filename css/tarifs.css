@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+html {
+  font-size: 62.5%;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  line-height: 1;
+  background-color: #fff;
+}
+
+/* Code mobile first */
+/* Header */
+
+header > p {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+nav > div > a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* main */
+main {
+  background-color: #1f2039;
+}
+
+.tarifs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f2039;
+}
+
+.cadre-tarifs {
+  width: 278px;
+  border-right: 1px solid #a5b4fc;
+  border-bottom: 1px solid #a5b4fc;
+  padding: 2rem;
+  color: #fff;
+  line-height: 1.5;
+  margin: 4rem 0;
+}
+
+.tarifs > h2 {
+  color: #a5b4fc;
+  font-size: 2.7rem;
+  margin-top: 7rem;
+}
+
+.cadre-tarifs > h3 {
+  color: #a5b4fc;
+  font-size: 2rem;
+}
+
+.desc {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cadre-tarifs > h4 {
+  color: #a5b4fc;
+  font-size: 1.7rem;
+}
+
+.matos {
+  font-size: 1rem;
+}
+
+/* tableau */
+
+.bg > h3 {
+  color: #a5b4fc;
+  font-size: 3rem;
+}
+
+table {
+  color: #fff;
+  width: 650px;
+  height: 300px;
+  font-size: 1.6rem;
+  border-collapse: collapse;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+}
+
+th,
+td {
+  border: 1px solid #a5b4fc;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.reseau {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.reseau > img {
+  margin: 1.5rem 0;
+}
+
+footer > img {
+  margin: 2rem 0;
+}
+
+.contactez-moi > button {
+  display: none;
+}
+
+@media screen and (min-width: 375px) {
+  table {
+    width: 300px;
+    height: 150px;
+    font-size: 1rem;
+  }
+
+  .contactez-moi > button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* header */
+  header > p {
+    text-align: start;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2em;
+    margin: 1rem 0;
+  }
+
+  nav > div {
+    flex-direction: row;
+    width: 70em;
+    justify-content: space-around;
+  }
+  nav > div > a:hover {
+    border-bottom: 2px solid #1f2039;
+  }
+  /* main */
+  /* tarifs */
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactez-moi {
+    display: flex;
+    width: 1180px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10rem;
+  }
+
+  .contactez-moi > button {
+    color: #fff;
+    background-color: #a5b4fc;
+    width: 280px;
+    height: 80px;
+    border-radius: 60px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .contactez-moi > button:hover {
+    box-shadow: 0px 0px 34px 0px #a5b4fc;
+    cursor: pointer;
+  }
+
+  .tata {
+    color: #a5b4fc;
+    font-size: 7rem;
+    margin: 0 0;
+    /* padding-left: 13rem; */
+  }
+
+  .tarifs {
+    margin-top: 5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  /* tables */
+  table {
+    width: 800px;
+    height: 400px;
+    font-size: 2rem;
+  }
+
+  thead > th {
+    height: 10px;
+  }
+  /* footer */
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem;
+  }
+
+  .reseau {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 250px;
+  }
+}

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+html {
+  font-size: 62.5%;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  line-height: 1;
+  background-color: #fff;
+}
+
+/* header */
+header > p {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+nav > div > a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* main */
+.pfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #a5b4fc;
+  background-color: #1f2039;
+  height: 200px;
+}
+
+.paysage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paysage > article > h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.grid-paysage {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  row-gap: 10px;
+}
+
+.grid-paysage > img {
+  border: 5px solid #1f2039;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.reseau {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.reseau > img {
+  margin: 1.5rem 0;
+}
+
+footer > img {
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 1440px) {
+  /* header */
+  header > p {
+    text-align: start;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2em;
+    margin: 1rem 0;
+  }
+
+  nav > div {
+    flex-direction: row;
+    width: 70em;
+    justify-content: space-around;
+  }
+  nav > div > a:hover {
+    border-bottom: 2px solid #1f2039;
+  }
+  /* main */
+  .pfolio {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20rem;
+    font-size: 5.5rem;
+    font-weight: 200;
+    color: #a5b4fc;
+    background-color: #1f2039;
+    height: 307px;
+  }
+
+  .paysage > article > h3 {
+    text-align: start;
+    font-size: 2.5rem;
+    margin-top: 6rem;
+  }
+
+  .grid-paysage {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  /* footer */
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem;
+  }
+
+  .reseau {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 250px;
+  }
+}

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+html {
+  font-size: 62.5%;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  line-height: 1;
+  background-color: #fff;
+}
+
+/* Code mobile first */
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f2039;
+}
+
+.grid-robbie {
+  display: grid;
+  grid-template-columns: 192.25px;
+  grid-row: auto;
+  gap: 14px;
+  margin-right: 10rem;
+}
+
+.grid-robbie {
+  margin-top: 5rem;
+}
+
+.none {
+  display: none;
+}
+
+.a-prop > h2 {
+  font-size: 5.5rem;
+  color: #a5b4fc;
+  margin-top: 20rem;
+}
+
+.a-prop > p {
+  margin: 10rem 0 10rem 0;
+  text-align: center;
+}
+
+.a-prop > div {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.4;
+  border-right: 1px solid #a5b4fc;
+  border-bottom: 1px solid #a5b4fc;
+  padding: 0 4rem 4rem 0;
+}
+
+@media screen and (min-width: 1440px) {
+  /* -----------------------header----------------------- */
+
+  .none {
+    display: block;
+  }
+
+  header > p {
+    text-align: start;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2em;
+    margin: 1rem 0;
+  }
+
+  nav > div {
+    flex-direction: row;
+    width: 70em;
+    justify-content: space-around;
+  }
+  nav > div > a:hover {
+    border-bottom: 2px solid #1f2039;
+  }
+  /* ------------------------main---------------------------- */
+
+  .bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0 4rem 0;
+    background-color: #1f2039;
+  }
+
+  .grid-robbie {
+    display: grid;
+    /* grid-template-columns: 192.25px 192.25px 192.25px 192.25px 192.25px; */
+    grid-template-columns: auto auto auto auto auto;
+    margin-right: 0;
+    grid-row: auto;
+    gap: 14px;
+    border-right: 1px solid #a5b4fc;
+    border-bottom: 1px solid #a5b4fc;
+    padding: 2rem;
+  }
+
+  .grid-robbie > img {
+    width: 192.25px;
+    height: 195px;
+    margin: 0 0;
+  }
+
+  .a-prop > h2 {
+    font-size: 5.5rem;
+    color: #a5b4fc;
+    margin-top: 20rem;
+  }
+
+  .a-prop > p {
+    margin: 10rem 0 10rem 0;
+    text-align: center;
+  }
+
+  .a-prop > div {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    border-right: 1px solid #a5b4fc;
+    border-bottom: 1px solid #a5b4fc;
+    padding: 0 4rem 4rem 0;
+  }
+
+  /* ------------------------footer-------------------------- */
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem;
+  }
+
+  .reseau {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 250px;
+  }
+}
